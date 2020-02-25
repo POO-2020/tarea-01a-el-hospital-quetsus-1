@@ -2,11 +2,11 @@ import Fecha from "./fecha.js";
 import Tiempo from "./tiempo.js";
 import Doctor from "./doctor.js";
 import Paciente from "./paciente.js";
-class Cita {
+export default class Cita {
     /**
      * 
-     * @param {Fecha} fecha 
-     * @param {Tiempo} hora 
+     * @param {Fecha} fecha Fecha de la cita
+     * @param {Tiempo} hora Hora de la cita
      * @param {Doctor} doctor 
      * @param {Paciente} paciente 
      */

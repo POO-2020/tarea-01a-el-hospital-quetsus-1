@@ -1,3 +1,4 @@
+import Nombre from "./nombre.js";
 export default class Doctor {
     /**
      * 
