@@ -1,4 +1,4 @@
-class Tiempo {
+export default class Tiempo {
     /**
      * 
      * @param {number} hora 
@@ -11,7 +11,15 @@ class Tiempo {
         this.periodo = periodo;
     }
     getFormato12() {
-        return `${this.hora} ${this.minutos} ${this.periodo}`;
+        return `${this.hora}: ${this.minutos} ${this.periodo}`;
     }
-    getFormato24 () {}
+    getFormato24 () {
+        if (this.periodo == "PM") {
+            this.hora = this.hora + 12
+        }
+        return `${this.hora}: ${this.minutos}`;
+    }   
 }
+let tiempo1 = new Tiempo(9, 40, "PM")
+console.log(tiempo1.getFormato12());
+console.log(tiempo1.getFormato24());

@@ -17,6 +17,12 @@ class Nombre {
         return `${this.apellidoPaterno} ${this.apellidoMaterno} ${this.nombre}`;
     }
     getIniciales() {
-        return ``
+        return `${this.nombre.charAt(0)}. ${this.apellidoPaterno.charAt(0)}. ${this.apellidoMaterno.charAt(0)}`
     }
 }
+/*
+let nombre1 = new Nombre("Braulio Hassan", "Pérez", "Solórzano")
+console.log(nombre1.getNombreCompleto());
+console.log(nombre1.getApellidoNombre());
+console.log(nombre1.getIniciales());
+*/

@@ -1,4 +1,4 @@
-class Doctor {
+export default class Doctor {
     /**
      * 
      * @param {string} nombre Nombre del doctor
